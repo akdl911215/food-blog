@@ -63,7 +63,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-
       {/* Newsletter */}
       <section className="bg-orange-50 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
