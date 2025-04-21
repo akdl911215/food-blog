@@ -1,16 +1,23 @@
 "use client";
 import styled from "styled-components";
+import { FiShield, FiCreditCard, FiClock } from "react-icons/fi";
 
 const Section = styled.section`
-  padding: 4rem 2rem;
-  background: #f1f4fa;
+  padding: 5rem 2rem;
+  background: #f9fbff;
   text-align: center;
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+`;
+
+const SubTitle = styled.p`
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
 `;
 
 const FeatureGrid = styled.div`
@@ -21,28 +28,74 @@ const FeatureGrid = styled.div`
 `;
 
 const Card = styled.div`
-  max-width: 300px;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  max-width: 280px;
+  flex: 1;
+  text-align: left;
+  min-width: 250px;
+`;
+
+const IconCircle = styled.div`
+  background: #eef3ff;
+  color: #3b82f6;
+  border-radius: 50%;
+  padding: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+`;
+
+const FeatureTitle = styled.h3`
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+`;
+
+const FeatureDescription = styled.p`
+  font-size: 0.95rem;
+  color: #555;
 `;
 
 export default function Features() {
   return (
     <Section>
       <Title>왜 카렌트를 선택해야 할까요?</Title>
+      <SubTitle>고객 만족을 최우선으로 생각하는 카렌트만의 특별한 서비스</SubTitle>
+
       <FeatureGrid>
         <Card>
-          <h3>안전 보장</h3>
-          <p>정기 점검된 차량만 제공합니다.</p>
+          <IconCircle>
+            <FiShield />
+          </IconCircle>
+          <FeatureTitle>안전 보장</FeatureTitle>
+          <FeatureDescription>
+            모든 차량은 정기적인 안전 점검을 통과한 차량만 제공합니다.
+          </FeatureDescription>
         </Card>
+
         <Card>
-          <h3>투명한 가격</h3>
-          <p>모든 요금이 명확하게 표시됩니다.</p>
+          <IconCircle>
+            <FiCreditCard />
+          </IconCircle>
+          <FeatureTitle>투명한 가격</FeatureTitle>
+          <FeatureDescription>
+            숨겨진 비용 없이 모든 요금이 명확하게 표시됩니다.
+          </FeatureDescription>
         </Card>
+
         <Card>
-          <h3>24시간 지원</h3>
-          <p>언제든 도움을 받을 수 있습니다.</p>
+          <IconCircle>
+            <FiClock />
+          </IconCircle>
+          <FeatureTitle>24시간 지원</FeatureTitle>
+          <FeatureDescription>
+            언제든지 도움이 필요할 때 연중무휴 고객 지원 서비스를 제공합니다.
+          </FeatureDescription>
         </Card>
       </FeatureGrid>
     </Section>
