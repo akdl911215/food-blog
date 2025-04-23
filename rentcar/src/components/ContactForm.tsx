@@ -4,7 +4,7 @@ import { FiPhone, FiMapPin } from "react-icons/fi";
 
 const Section = styled.section`
   padding: 5rem 2rem;
-  background: #f8f9fb;
+  // background: #f8f9fb;
 `;
 
 const Wrapper = styled.div`
