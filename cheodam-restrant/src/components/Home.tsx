@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Features from '@/components/Features';
 import SignatureMenu from '@/components/SignatureMenu';
 import Chef from '@/components/Chef';
 import Reservation from '@/components/Reservation';
@@ -22,7 +21,6 @@ export default function Home() {
         <Header />
         <Hero />
         <About />
-        <Features />
         <SignatureMenu />
         <Chef />
         <Reservation />

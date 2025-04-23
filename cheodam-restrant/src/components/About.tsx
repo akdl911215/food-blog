@@ -36,9 +36,13 @@ const Grid = styled.div`
 `;
 
 const Feature = styled.div`
-  max-width: 240px;
+  max-width: 400px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
+
 
 const IconCircle = styled.div`
   width: 60px;
@@ -63,7 +67,12 @@ const FeatureDesc = styled.p`
   color: #aaa;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.6;
+  min-height: 3.5rem;
 `;
+
 
 export default function About() {
   return (
