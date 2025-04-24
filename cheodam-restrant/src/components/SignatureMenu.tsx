@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import rigottoImage from '@/assets/images/rigotto.png';
 import stakeImage from '@/assets/images/stake.png';
+import desertImage from '@/assets/images/desert.png';
+import labstarImage from '@/assets/images/labstar.png';
 
 const Section = styled.section`
   padding: 6rem 2rem;
@@ -91,17 +93,27 @@ export default function SignatureMenu() {
         <Card>
           <Image
             src={stakeImage}
-            alt="한우 안심 스텡디크"
+            alt="한우 안심 스테이크"
             style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center 60%', borderRadius: '8px 8px 0 0' }}
           />
           <DishTitle>한우 안심 스테이크</DishTitle>
           <Description>최상급 한우와 특제 소스의 완벽한 만남</Description>
         </Card>
         <Card>
+          <Image
+            src={labstarImage}
+            alt="랍스터 비스크"
+            style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center 60%', borderRadius: '8px 8px 0 0' }}
+          />
           <DishTitle>랍스터 비스크</DishTitle>
           <Description>신선한 랍스터로 48시간 정성껏 끓여낸 깊은 풍미</Description>
         </Card>
         <Card>
+          <Image
+            src={desertImage}
+            alt="시그니처 디저트"
+            style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center 60%', borderRadius: '8px 8px 0 0' }}
+          />
           <DishTitle>시그니처 디저트</DishTitle>
           <Description>금박을 입힌 초콜릿 무스와 계절 과일</Description>
         </Card>
