@@ -1,49 +1,44 @@
 import styled from 'styled-components';
+import Image from 'next/image';
+import heroImage from '@/assets/images/hero.jpg';
 
 const Section = styled.section`
-  background: #5a5755;
-  padding: 17rem 2rem;
-  text-align: center;
+  background: url(${heroImage.src}) center/cover no-repeat;
+  height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 const Title = styled.h1`
-  color: #f4c430;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 `;
 
-const Subtitle = styled.h2`
-  color: white;
-  margin-top: 1.5rem;
+const Subtitle = styled.p`
   font-size: 1.25rem;
+  max-width: 640px;
 `;
 
-const Button = styled.button`
+const ButtonGroup = styled.div`
   margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.95rem;
-  background: transparent;
-  border: 1px solid #f4c430;
-  color: #f4c430;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-
-  &:hover {
-    background: #f4c430;
-    color: #5a5755;
-  }
+  display: flex;
+  gap: 1rem;
 `;
 
 export default function Hero() {
   return (
     <Section>
-      <Title>MAISON LUMIÈRE</Title>
-      <Subtitle>고객의 기대를 넘는, 프리미엄 다이닝의 첫인상</Subtitle>
-      <Button>예약하기</Button>
+      <Title>기대를 넘어선 럭셔리</Title>
+      <Subtitle>청담동의 중심에서 경험하는 최상의 호스피탈리티</Subtitle>
+      <ButtonGroup>
+        <button>객실 보기</button>
+        <button>더 알아보기</button>
+      </ButtonGroup>
     </Section>
   );
 }
