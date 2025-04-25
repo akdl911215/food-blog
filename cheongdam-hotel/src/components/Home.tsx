@@ -1,34 +1,31 @@
-import styled from 'styled-components';
+import Header from './Header';
 import Hero from './Hero';
 import About from './About';
-import Features from './Features';
-import SignatureMenu from './SignatureMenu';
-import Chef from './Chef';
-import Reservation from './Reservation';
+import Rooms from './Rooms';
+import Services from './Services';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
+import Footer from './Footer';
+import styled, { ThemeProvider } from 'styled-components';
+import theme from '@/styles/theme';
 
 const Wrapper = styled.div`
-  background: #111;
-  color: #fff;
   font-family: 'Noto Serif KR', serif;
 `;
 
 export default function Home() {
   return (
-    <Wrapper>
-      <Header />
-      <Hero />
-      <About />
-      <Features />
-      <SignatureMenu />
-      <Chef />
-      <Reservation />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </Wrapper>
+    <ThemeProvider theme={theme}>
+      <Wrapper>
+        <Header />
+        <Hero />
+        <About />
+        <Rooms />
+        <Services />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </Wrapper>
+    </ThemeProvider>
   );
 }
