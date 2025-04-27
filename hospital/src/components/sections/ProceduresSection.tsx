@@ -138,7 +138,7 @@ const ProceduresSection = () => {
                 height={250}
                 style={{
                   width: "100%",
-                  height: "200px",
+                  height: "450px",
                   objectFit: "cover",
                   borderTopLeftRadius: "1rem",
                   borderTopRightRadius: "1rem",
